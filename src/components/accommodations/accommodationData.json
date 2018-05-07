@@ -1,0 +1,22 @@
+{
+  "hotels": [
+    {
+      "name": "1. Hampton Inn Morgan Hill",
+      "street_address": "16115 Condit Rd",
+      "city_state": "Morgan Hill, CA 95037",
+      "url": "http://hamptoninn3.hilton.com/en/hotels/california/hampton-inn-morgan-hill-SJCCRHX/index.html"
+    },
+    {
+      "name": "2. Courtyard by Marriot",
+      "street_address": "18610 Madrone Pkwy",
+      "city_state": "Morgan Hill, CA 95037",
+      "url": "http://www.marriott.com/hotels/travel/sjcmh-courtyard-san-jose-south-morgan-hill/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2"
+    },
+    {
+      "name": "3. La Quinta Inn & Suites",
+      "street_address": "3. La Quinta Inn & Suites",
+      "city_state": "Morgan Hill, CA 95037",
+      "url": "http://www.laquintamorganhill-sanjosesouth.com/?cid=local_6818"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+{
+  "extends": "@automatic-labs/eslint-config/react"
+}

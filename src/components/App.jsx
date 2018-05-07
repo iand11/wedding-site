@@ -1,0 +1,29 @@
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+
+import Home from './home/home.jsx';
+import Registry from './registry/registry.jsx';
+import Photos from './photos/photos.jsx';
+import Header from './header/header.jsx';
+import Details from './details/details.jsx';
+import Accommodations from './accommodations/accommodations.jsx';
+
+import './index.scss';
+
+export default class App extends Component {
+  render() {
+    return (
+      <Router>
+        <div className="app">
+          <Header />
+          <Route exact path="/" component={Home} />
+          <Route path="/registry" component={Registry} />
+          <Route path="/photos" component={Photos} />
+          <Route path="/details" component={Details} />
+          <Route path="/accommodations" component={Accommodations} />
+          <p className="footer">© Ian Driscoll</p>
+        </div>
+      </Router>
+    );
+  }
+}
