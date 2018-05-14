@@ -1,0 +1,60 @@
+.registry {
+  // background: url('../../photos/images/sf-fog.jpg') center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // color: grey;
+  // background-color: #f2f2e4;
+  width: 100%;
+  font-family: 'EB Garamond', serif;
+  font-weight: normal;
+  // text-transform: uppercase;
+  text-align: center;
+  min-height: 100vh;
+
+  &__registry-button {
+    font-size: 27px;
+    padding: 15px;
+    border: none;
+    color: white;
+    background-color: #13a5a5;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'EB Garamond', serif;
+    font-weight: normal;
+    // text-transform: uppercase;
+  }
+
+  &__title {
+    padding: 20px;
+    font-size: 50px;
+  }
+
+  &__ask-for-money {
+    font-size: 27px;
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 50px;
+    width: 60%;
+    letter-spacing: 2px;
+    // height: 100vh;
+
+    h3 {
+      padding: 20px;
+    }
+  }
+}
+
+@media only screen and (max-device-width: 768px) {
+  .registry__ask-for-money {
+    padding: 40px 0;
+    width: 98%;
+    p {
+      width: 85%;
+      margin: auto;
+      font-size: 20px;
+    }
+
+  }
+}

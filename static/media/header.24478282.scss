@@ -1,0 +1,85 @@
+.header {
+  border-bottom: 2px solid lightgrey;
+
+  &__nav-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    list-style: none;
+    width: 60%;
+    margin: auto;
+    padding: 0;
+
+    &--link {
+      text-align: center;
+      border: none;
+      font-size: 30px;
+      cursor: pointer;
+      font-family: 'Dancing Script', cursive;
+      color: black;
+      text-decoration: none;
+      padding: 20px;
+    }
+  }
+
+  &__mobile-view {
+    display: flex;
+    flex-flow: row;
+    height: 60px;
+    text-align: center;
+    &--menu-button {
+      border: none;
+      outline: 0;
+      font-size: 13px;
+      cursor: pointer;
+      font-family: 'Dancing Script', cursive;
+      color: black;
+      text-decoration: none;
+      padding: 10px;
+      background-color: white;
+    }
+
+    &--title-wrapper {
+      width: 60%;
+      margin: auto;
+      text-align: center;
+    }
+    &--title {
+      font-family: 'Dancing Script', cursive;
+      margin: auto;
+      font-size: 30px;
+      margin-right: 15%;
+    }
+  }
+
+  .menu-icon--wrapper {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    cursor: pointer;
+
+    p {
+      font-family: 'EB Garamond', serif;
+      letter-spacing: 2px;
+      font-size: 20px;
+      padding-left: 10px;
+    }
+  }
+}
+
+
+@media only screen and (max-device-width: 1024px) {
+  .header__nav-list {
+    width: 100%;
+  }
+
+  .nav-header__list--item {
+    padding: 10px;
+    width: 100%;
+  }
+}
+@media only screen and (max-device-width: 414px) {
+  .header__nav-list {
+    width: 55%;
+  }
+}

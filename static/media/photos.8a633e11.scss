@@ -1,0 +1,181 @@
+.photo-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: auto;
+  padding-top: 20px;
+  width: 100%;
+
+  &__photo {
+    height: 100%;
+    vertical-align: top;
+    width: 100%;
+  }
+}
+
+.photo-carousel--large-photo__wrapper {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  padding-top: 20px;
+  width: 100%;
+  margin: auto;
+  height: 600px;
+}
+
+.photo-carousel {
+  width: 100%;
+  height: 150%;
+  background:rgba(0,0,0,0.9);
+  position: absolute;
+  top:0; left:0;
+  z-index: 0;
+  opacity:2;
+  transition: all 1s;
+
+  &__close-button {
+    font-family: 'Varela Round', sans-serif;
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 45px;
+    cursor: pointer;
+    padding: 30px;
+    outline: 0;
+    transition: all 1s;
+    margin-lyfdfdsaeft: 10px;
+  }
+
+  &__previous-button, &__next-button {
+    background-color: transparent;
+    color: lightgrey;
+    font-size: 50px;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 20px;
+    outline: 0;
+    transition: all 1s;
+    height: 10px;
+    line-height: 600px;
+  }
+
+  &__close-button:hover {
+    color: white;
+  }
+
+  &--large-photo {
+    visibility: hidden;
+    width: 45%;
+    height: 600px;
+    margin: auto;
+  }
+  &__mobile-buttons {
+    display: none;
+  }
+}
+
+.fade {
+  animation: fadein 1s;
+  visibility: visible;
+}
+
+.image {
+    cursor: pointer;
+    height: 250px;
+    position: relative;
+    width: 250px;
+    border: none;
+    outline: 0;
+
+  &:after {
+    -webkit-transition: all 1s;
+    background:rgba(0,0,0,0.6);
+    content: '\A';
+    opacity: 0;
+    position: absolute;
+    top:0; left:0;
+    transition: all 1s;
+    width: 100%; height:100%;
+  }
+
+  &:hover:after {
+    opacity:1;
+  }
+
+  &:hover p {
+    color: white;
+    margin-top: 30%;
+  }
+
+  p {
+    color: transparent;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    margin-top: 0;
+    position: absolute;
+    text-align: center;
+    transition: all 1s;
+    vertical-align: top;
+    width: 100%;
+    z-index: 1;
+  }
+}
+
+.pic {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  height: 500px;
+  margin: 30px auto 100px;
+  width: 75%;
+}
+
+@keyframes fadein {
+    from { opacity: 0.5; }
+    to   { opacity: 1; }
+}
+
+@media only screen and (max-device-width: 770px) {
+  .photo-carousel {
+    height: 2000px;
+  }
+  .photo-carousel--large-photo {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-device-width: 450px) {
+  .photo-list {
+    padding: 0;
+    width: 100%;
+  }
+  .image {
+    width: 50%;
+    height: 200px;
+  }
+
+  .photo-carousel {
+    &--large-photo {
+      height: 550px;
+      width: 100%;
+    }
+    &__previous-button, &__next-button {
+      display: none;
+    }
+    &__previous-button--mobile, &__next-button--mobile {
+      font-size: 30px;
+      outline: 0px;
+    }
+    &__mobile-buttons {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+      padding: 0 90px;
+    }
+    &__close-button {
+      margin-left: 0;
+      padding: 0 0 0 10px;
+    }
+  }
+}

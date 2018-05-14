@@ -1,0 +1,73 @@
+.details {
+  margin: none;
+
+  &__info-section {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 45px;
+
+    &--title{
+      font-family: 'Dancing Script', cursive;
+      font-size: 40px;
+      padding-bottom: 20px;
+    }
+
+    &--body {
+      font-family: 'EB Garamond', serif;
+      font-size: 20px;
+      letter-spacing: 2px;
+      padding: 3px;
+    }
+  }
+
+  &__no-kids {
+    border-top: 1px solid grey;
+    padding: 30px 0 30px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+
+    &--body {
+      font-family: 'EB Garamond', serif;
+      font-size: 18px;
+      letter-spacing: 2px;
+      padding: 3px;
+    }
+  }
+}
+
+.large-picture {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto 20px;
+  padding-top: 20px;
+
+  &__image {
+    position: absolute;
+    margin: auto;
+    width: 90%;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-device-width: 768px) {
+  .details {
+
+    &__info-section {
+       &--title {
+        font-size: 35px;
+       }
+       &--body {
+        font-size: 18px;
+       }
+    }
+
+    &__no-kids {
+      width: 80%;
+    }
+  }
+}
