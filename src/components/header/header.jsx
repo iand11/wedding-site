@@ -122,13 +122,22 @@ export default class Header extends React.Component {
             data-wow-delay="0.6s"
             activeStyle={{ color: '#13a5a5' }}
             className="header__nav-list--link wow fadeInDown"
+            to="/activities"
+            onClick={() => this.mobileView('Activities')}
+          >
+            Activities
+          </NavLink>
+          <NavLink
+            data-wow-delay="0.8s"
+            activeStyle={{ color: '#13a5a5' }}
+            className="header__nav-list--link wow fadeInDown"
             to="/photos"
             onClick={() => this.mobileView('Photos')}
           >
             Photos
           </NavLink>
           <NavLink
-            data-wow-delay="0.8s"
+            data-wow-delay="1s"
             activeStyle={{ color: '#13a5a5' }}
             className="header__nav-list--link wow fadeInDown"
             to="/registry"

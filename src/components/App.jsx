@@ -7,6 +7,7 @@ import Photos from './photos/photos.jsx';
 import Header from './header/header.jsx';
 import Details from './details/details.jsx';
 import Accommodations from './accommodations/accommodations.jsx';
+import Activities from './activities/activities.jsx';
 
 import './index.scss';
 
@@ -21,6 +22,7 @@ export default class App extends Component {
           <Route path="/photos" component={Photos} />
           <Route path="/details" component={Details} />
           <Route path="/accommodations" component={Accommodations} />
+          <Route path="/activities" component={Activities} />
           <p className="footer">© Ian Driscoll</p>
         </div>
       </Router>
