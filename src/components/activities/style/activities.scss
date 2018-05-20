@@ -77,7 +77,7 @@
 @media only screen and (max-device-width: 770px) {
   .activities {
     &--section {
-      height: 150px;
+      min-height: 130px;
     }
 
     &--title-section {
