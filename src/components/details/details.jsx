@@ -1,7 +1,7 @@
 import React from 'react';
 import { Marker, InfoWindow } from 'react-google-maps';
 
-import GoogleMap from '../googleMap.jsx';
+import MapGenerator from '../util/map-generator';
 
 import './style/details.scss';
 
@@ -9,9 +9,7 @@ export default class Details extends React.Component {
   render() {
     return (
       <div className="details">
-        <GoogleMap
-          defaultZoom={11}
-          defaultCenter={{ lat: 37.0997311, lng: -121.7260854 }}
+        <MapGenerator
           marker={
             <Marker position={{ lat: 37.0997311, lng: -121.7260854 }}>
               <InfoWindow>
@@ -22,10 +20,7 @@ export default class Details extends React.Component {
               </InfoWindow>
             </Marker>
           }
-          googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${process.env.REACT_APP_GOOGLE_MAPS_API_KEY}`}
-          loadingElement={<div style={{ height: '100%' }} />}
-          containerElement={<div style={{ height: '350px' }} />}
-          mapElement={<div style={{ height: '90%' }} />}
+          center={{ lat: 37.0997311, lng: -121.7260854 }}
         />
         <div className="details__info-section">
           <p className="details__info-section--title">Wedding Ceremony & Reception</p>

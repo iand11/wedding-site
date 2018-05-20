@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
 
 import Home from './home/home.jsx';
 import Registry from './registry/registry.jsx';
@@ -17,13 +17,13 @@ export default class App extends Component {
       <Router>
         <div className="app">
           <Header />
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" render={() => (<Redirect to="/home" />)} />
+          <Route path="/home" component={Home}/>
           <Route path="/registry" component={Registry} />
           <Route path="/photos" component={Photos} />
           <Route path="/details" component={Details} />
           <Route path="/accommodations" component={Accommodations} />
           <Route path="/activities" component={Activities} />
-          <Route component={Home}/>
           <p className="footer">© Ian Driscoll</p>
         </div>
       </Router>

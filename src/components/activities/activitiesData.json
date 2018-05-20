@@ -11,8 +11,8 @@
         {
           "title": "MOMA",
           "url": "https://www.sfmoma.org",
-          "address": "151 3rd St",
-          "state": "San Francisco, CA 94103",
+          "street_address": "151 3rd St",
+          "city_state": "San Francisco, CA 94103",
           "position": {
             "lat": 37.785,
             "lng": -122.401
@@ -22,8 +22,8 @@
         {
           "title": "California Academy of Sciences",
           "url": "https://www.calacademy.org",
-          "address": "55 Music Concourse Dr",
-          "state": "San Francisco, CA 94118",
+          "street_address": "55 Music Concourse Dr",
+          "city_state": "San Francisco, CA 94118",
           "position": {
             "lat": 37.769,
             "lng": -122.466
@@ -33,7 +33,7 @@
         {
           "title": "Marina District",
           "url": "https://www.sfgate.com/neighborhoods/sf/marina",
-          "address": "San Francisco, CA 94123",
+          "street_address": "San Francisco, CA 94123",
           "position": {
             "lat": 37.803,
             "lng": -122.436
@@ -43,8 +43,8 @@
         {
           "title": "Ferry Building",
           "url": "https://www.ferrybuildingmarketplace.com",
-          "address": "Ferry Building, One San Francisco Bay Trail",
-          "state": "San Francisco, CA 94111",
+          "street_address": "Ferry Building, One San Francisco Bay Trail",
+          "city_state": "San Francisco, CA 94111",
           "position": {
             "lat": 37.795,
             "lng": -122.393
@@ -55,8 +55,8 @@
       "food": [
         {
           "title": "La Taqueria",
-          "address": "2889 Mission St",
-          "state": "San Francisco, CA 94110",
+          "street_address": "2889 Mission St",
+          "city_state": "San Francisco, CA 94110",
           "url": "https://facebook.com/LaTaqSF/",
           "position": {
             "lat": 37.750,
@@ -66,8 +66,8 @@
         },
         {
           "title": "Tartine Manufactory",
-          "address": "595 Alabama St",
-          "state": "San Francisco, CA 94110",
+          "street_address": "595 Alabama St",
+          "city_state": "San Francisco, CA 94110",
           "url": "https://www.tartinemanufactory.com",
           "position": {
             "lat": 37.761,
@@ -77,8 +77,8 @@
         },
         {
           "title": "Sotto Mare",
-          "address": "552 Green St",
-          "state": "San Francisco, CA 94133",
+          "street_address": "552 Green St",
+          "city_state": "San Francisco, CA 94133",
           "url": "https://www.sottomaresf.com",
           "position": {
             "lat": 37.799,
@@ -88,8 +88,8 @@
         },
         {
           "title": "Buena Vista Cafe",
-          "address": "2765 Hyde St",
-          "state": "San Francisco, CA 94109",
+          "street_address": "2765 Hyde St",
+          "city_state": "San Francisco, CA 94109",
           "url": "https://www.thebuenavista.com",
           "position": {
             "lat": 37.806,
@@ -110,8 +110,8 @@
         {
           "title": "Landmark Vineyard",
           "url": "https://www.landmarkwine.com",
-          "address": "101 Adobe Canyon Rd",
-          "state": "Kenwood, CA 95452",
+          "street_address": "101 Adobe Canyon Rd",
+          "city_state": "Kenwood, CA 95452",
           "position": {
             "lat": 38.426,
             "lng": -122.556
@@ -120,9 +120,9 @@
         },
         {
           "title": "Spottswoode Winery",
-          "url": "https://www.www.spottswoode.com",
-          "address": "1902 Madrona Ave",
-          "state": "St Helena, CA 94574",
+          "url": "https://www.spottswoode.com",
+          "street_address": "1902 Madrona Ave",
+          "city_state": "St Helena, CA 94574",
           "position": {
             "lat": 38.500,
             "lng": -122.478
@@ -132,8 +132,8 @@
         {
           "title": "Promontory Wines",
           "url": "https://www.promontory.wine",
-          "address": "1601 Oakville Grade Rd",
-          "state": "Oakville, CA 94562",
+          "street_address": "1601 Oakville Grade Rd",
+          "city_state": "Oakville, CA 94562",
           "position": {
             "lat": 38.421,
             "lng": -122.414
@@ -144,8 +144,8 @@
       "food": [
         {
           "title": "The Freemont Dinner",
-          "address": "2698 Fremont Drive",
-          "state": "Sonoma, CA 95476",
+          "street_address": "2698 Fremont Drive",
+          "city_state": "Sonoma, CA 95476",
           "url": "https://www.thefremontdiner.com",
           "position": {
             "lat": 38.246,
@@ -155,8 +155,8 @@
         },
         {
           "title": "Southside Cafe",
-          "address": "2770 Old Sonoma Rd",
-          "state": "Napa, CA 94558",
+          "street_address": "2770 Old Sonoma Rd",
+          "city_state": "Napa, CA 94558",
           "url": "https://www.southsidenapa.com",
           "position": {
             "lat": 38.287,
@@ -172,46 +172,46 @@
         "lat": 37.235,
         "lng": -121.962
       },
-      "zoom": 10,
+      "zoom": 9,
       "activities": [
         {
           "title": "Sarah's Vineyard",
           "url": "https://www.sarahsvineyard.com",
-          "address": "4005 Hecker Pass Hwy",
-          "state": "Gilroy, CA 95020",
+          "street_address": "4005 Hecker Pass Hwy",
+          "city_state": "Gilroy, CA 95020",
           "position": {
-            "lat": 37.774,
-            "lng": -122.419
+            "lat": 37.013791,
+            "lng": -121.644790
           },
           "marker": "1"
         },
         {
           "title": "Martin Ranch Winery",
           "url": "https://www.martinranchwinery.com",
-          "address": "6675 Redwood Retreat Rd",
-          "state": "Gilroy, CA 95020",
+          "street_address": "6675 Redwood Retreat Rd",
+          "city_state": "Gilroy, CA 95020",
           "position": {
-            "lat": 37.013,
-            "lng": -121.644
+            "lat": 37.039635,
+            "lng": -121.711218
           },
           "marker": "2"
         },
         {
           "title": "Clos LaChance Winery",
           "url": "http://www.clos.com/",
-          "address": "1 Hummingbird Ln",
-          "state": "San Martin, CA 95046",
+          "street_address": "1 Hummingbird Ln",
+          "city_state": "San Martin, CA 95046",
           "position": {
-            "lat": 37.0728,
-            "lng": -121.643
+            "lat": 37.072889,
+            "lng": -121.643270
           },
           "marker": "3"
         },
         {
           "title": "Los Gatos Farmers' Market",
           "url": "http://www.cafarmersmkts.com/losgatos-farmers-market",
-          "address": "Montebello Way",
-          "state": "Los Gatos, CA 95030",
+          "street_address": "Montebello Way",
+          "city_state": "Los Gatos, CA 95030",
           "position": {
             "lat": 37.222,
             "lng": -121.984
@@ -221,8 +221,8 @@
         {
           "title": "Los Gatos Creek Trail",
           "url": "https://www.losgatosca.gov/907/Los-Gatos-Creek-Trail",
-          "address": "East Main st & College ave",
-          "state": "Los Gatos, CA 95030",
+          "street_address": "East Main st & College ave",
+          "city_state": "Los Gatos, CA 95030",
           "position": {
             "lat": 37.264,
             "lng": -121.950
@@ -232,43 +232,43 @@
       ],
       "food": [
         {
-          "title": "Andales",
+          "title": "Andalé",
           "url": "https://www.andalemexican.com",
-          "address": "6 N Santa Cruz Ave",
-          "state": "Los Gatos, CA 95030",
+          "street_address": "6 N Santa Cruz Ave",
+          "city_state": "Los Gatos, CA 95030",
           "position": {
-            "lat": 37.223,
-            "lng": -121.983
+            "lat": 37.223297,
+            "lng": -121.983750
           },
           "marker": "6"
         },
         {
           "title": "Icing on The Cake",
           "url": "https://www.icingonthecakebakery.com/cakes",
-          "address": "50 W Main St",
-          "state": "Los Gatos, CA 95030",
+          "street_address": "50 W Main St",
+          "city_state": "Los Gatos, CA 95030",
           "position": {
-            "lat": 37.222,
-            "lng": -121.982
+            "lat": 37.222009,
+            "lng": -121.982537
           },
           "marker": "7"
         },
         {
           "title": "Steamer's Grillhouse",
           "url": "http://www.steamers-restaurant.com/",
-          "address": "31 University Ave",
-          "state": "Los Gatos, CA 95030",
+          "street_address": "31 University Ave",
+          "city_state": "Los Gatos, CA 95030",
           "position": {
-            "lat": 37.223,
-            "lng": -121.982
+            "lat": 37.223248,
+            "lng": -121.982498
           },
           "marker": "8"
         },
         {
           "title": "Manresa Bread",
           "url": "http://manresabread.com/",
-          "address": "276 N Santa Cruz Ave",
-          "state": "Los Gatos, CA 95030",
+          "street_address": "276 N Santa Cruz Ave",
+          "city_state": "Los Gatos, CA 95030",
           "position": {
             "lat": 37.227,
             "lng": -121.981
@@ -278,11 +278,11 @@
         {
           "title": "Oak & Rye",
           "url": "http://oakandryepizza.com/",
-          "address": "303 N Santa Cruz Ave",
-          "state": "Los Gatos, CA 95030",
+          "street_address": "303 N Santa Cruz Ave",
+          "city_state": "Los Gatos, CA 95030",
           "position": {
-            "lat": 37.227,
-            "lng": -121.981
+            "lat": 37.227621,
+            "lng": -121.981824
           },
           "marker": "10"
         }
