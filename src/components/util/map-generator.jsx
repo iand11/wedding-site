@@ -30,8 +30,6 @@ export default class MapGenerator extends React.Component {
   }
 
   render() {
-    console.log('key*********', process.env.REACT_APP_GOOGLE_MAPS_API_KEY);
-    console.log('env*********', process.env);
     return (
       <div>
         <GoogleMap

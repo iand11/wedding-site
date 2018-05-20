@@ -39,7 +39,6 @@
     font-size: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 20px;
     margin-right: 30px;
   }
 
@@ -59,7 +58,6 @@
     font-family: 'EB Garamond', serif;
     font-size: 15px;
     letter-spacing: 3px;
-    // padding-top: 10px;
   }
 
   &--wrapper-link {
@@ -79,12 +77,45 @@
 
 @media only screen and (max-device-width: 770px) {
   .activities {
+    &--section {
+      height: 150px;
+    }
+
+    &--title-section {
+      align-items: flex-start;
+      width: 80%;
+      margin: auto;
+    }
+
+    &--marker {
+      padding-top: 3px;
+    }
+
+    &--address {
+      display: none;
+      color: red;
+    }
+
+    &--title {
+      flex-grow: 1;
+      font-size: 20px;
+    }
+
+    &--label {
+      width: 100%;
+      text-align: center;
+    }
     &--info {
       width: 100%;
     }
+
+    &--wrapper-link {
+      padding-left: 25px;
+    }
+
     &--activity {
     width: 100%;
-  }
+    }
 
   &--food {
     width: 100%;

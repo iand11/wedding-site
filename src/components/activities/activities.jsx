@@ -9,7 +9,7 @@ export default class Activities extends React.Component {
   renderFood(location) {
     return location.food.map((food) => {
       return (
-        <div key={food.title}>
+        <div className="activities--section" key={food.title}>
           <div className="activities--title-section">
             <p className="activities--marker">{food.marker}.</p>
             <p className="activities--title">{food.title}</p>
@@ -27,7 +27,7 @@ export default class Activities extends React.Component {
   renderActivities(location) {
     return location.activities.map((activity) => {
       return (
-        <div key={activity.title}>
+        <div className="activities--section" key={activity.title}>
           <div className="activities--title-section">
             <p className="activities--marker">{activity.marker}.</p>
             <p className="activities--title">{activity.title}</p>
