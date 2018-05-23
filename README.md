@@ -6,7 +6,7 @@ My wedding site is a custom website I built to display all the information and d
 ![alt text](photos/wedding-site-home.png?raw=true)
 
 ## Accommodations
-![alt text](photos/wedding-site-accpmidations.png?raw=true)
+![alt text](photos/wedding-site-accomidations.png?raw=true)
 
 ## Activities
 ![alt text](photos/wedding-site-activities.png?raw=true)
