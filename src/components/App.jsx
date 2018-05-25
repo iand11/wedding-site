@@ -17,8 +17,8 @@ export default class App extends Component {
       <Router>
         <div className="app">
           <Header />
-          <Route exact path="/" render={() => (<Redirect to="/home" />)} />
-          <Route path="/home" component={Home}/>
+          <Route exact path="/" render={() => <Redirect to="/home" />} />
+          <Route path="/home" component={Home} />
           <Route path="/registry" component={Registry} />
           <Route path="/photos" component={Photos} />
           <Route path="/details" component={Details} />
