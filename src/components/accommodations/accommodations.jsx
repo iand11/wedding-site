@@ -21,7 +21,8 @@ export default class Accommodations extends React.Component {
       );
     });
   }
-  render() {
+
+  renderMap() {
     const markers = accommodations.hotels.map((hotel) => {
       return { label: hotel.marker, position: hotel.position}
     });
@@ -44,6 +45,13 @@ export default class Accommodations extends React.Component {
         />
         { this.renderHotelInfo() }
       </div>
+    );
+  }
+  render() {
+    return (
+     <div style={{ marginTop: '50px' }} className="info-section">
+      <p className="info-section--title">Coming Soon...</p>
+     </div>
     );
   }
 }
