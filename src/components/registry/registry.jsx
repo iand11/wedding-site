@@ -41,7 +41,7 @@ export default class Registry extends React.Component {
           <p>We’re so lucky to be able to spend our wedding day with all of our friends and family.<br /> <br />
           Your presence is truly all the present we need.<br /> <br />
           If you’d like to get us a gift to celebrate<br /> <br />
-          We’ve created a registries at:</p>
+          We’ve created registries at:</p>
         </div>
         <div className="registry__buttons">
           {this.renderDonateButton()}
