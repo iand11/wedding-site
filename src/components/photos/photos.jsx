@@ -86,6 +86,7 @@ export default class Photos extends React.Component {
 
   handlePhotoCarouselClose = () => {
     document.body.style.overflow = 'auto';
+    document.documentElement.style.overflow = 'auto';
     this.setState({ carouselIsVissible: false });
   }
 
@@ -145,6 +146,7 @@ export default class Photos extends React.Component {
   renderPhotoCarousel() {
     if (this.state.carouselIsVissible) {
       document.body.style.overflow = 'hidden';
+      document.documentElement.style.overflow = 'hidden';
       return (
         <div
           className="photo-carousel"
