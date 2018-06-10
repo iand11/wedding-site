@@ -6,22 +6,14 @@ import photoData from './photoData';
 import './style/photos.scss';
 
 export default class Photos extends React.Component {
-  constructor(props) {
-    super(props);
 
-    this.state = {
-      carouselIsVissible: false,
-      carouselPhoto: -1,
-      trigger: 'fade',
-      xDown: null,
-      yDown: null
-    };
-    this.handlePhotoCarouselClose = this.handlePhotoCarouselClose.bind(this);
-    this.handleNextPhotoClick = this.handleNextPhotoClick.bind(this);
-    this.handlePreviousPhotoClick = this.handlePreviousPhotoClick.bind(this);
-    this.handleClickOutside = this.handleClickOutside.bind(this);
-    this.handleArrowKeyPress = this.handleArrowKeyPress.bind(this);
-  }
+  state = {
+    carouselIsVissible: false,
+    carouselPhoto: -1,
+    trigger: 'fade',
+    xDown: null,
+    yDown: null
+  };
 
   componentDidMount() {
     document.addEventListener('mousedown', this.handleClickOutside);
@@ -61,11 +53,11 @@ export default class Photos extends React.Component {
       if (xDiff > 0) {
         setTimeout(() => {
           this.handleNextPhotoClick();
-        }, 100)
+        }, 100);
       } else {
         setTimeout(() => {
           this.handlePreviousPhotoClick();
-        }, 100)
+        }, 100);
       }
     }
 
@@ -80,7 +72,6 @@ export default class Photos extends React.Component {
       },
       () => window.scrollTo(0, 0)
     );
-    // window.addEventListener('scroll', this.noscroll);
   }
 
   noscroll() {
@@ -93,11 +84,12 @@ export default class Photos extends React.Component {
     }, 10);
   }
 
-  handlePhotoCarouselClose() {
+  handlePhotoCarouselClose = () => {
+    document.body.style.overflow = 'auto';
     this.setState({ carouselIsVissible: false });
   }
 
-  handleArrowKeyPress(event) {
+  handleArrowKeyPress = (event) => {
     const leftArrow = event.keyCode === 37;
     const rightArrow = event.keyCode === 39;
 
@@ -109,7 +101,7 @@ export default class Photos extends React.Component {
     }
   }
 
-  handleClickOutside(event) {
+  handleClickOutside = (event) => {
     if (
       this.state.carouselIsVissible &&
       (!this.closeButton.contains(event.target) &&
@@ -120,7 +112,7 @@ export default class Photos extends React.Component {
     }
   }
 
-  handleNextPhotoClick() {
+  handleNextPhotoClick = () => {
     if (this.state.carouselPhoto < photoData.length - 1) {
       this.setState(
         {
@@ -132,7 +124,7 @@ export default class Photos extends React.Component {
     }
   }
 
-  handlePreviousPhotoClick() {
+  handlePreviousPhotoClick = () => {
     if (this.state.carouselPhoto > 0) {
       this.setState(
         {
@@ -152,6 +144,8 @@ export default class Photos extends React.Component {
 
   renderPhotoCarousel() {
     if (this.state.carouselIsVissible) {
+      document.body.style.overflow = 'hidden';
+
       return (
         <div
           className="photo-carousel"

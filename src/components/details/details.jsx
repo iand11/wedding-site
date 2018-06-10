@@ -41,7 +41,7 @@ export default class Details extends React.Component {
           <p className="details__no-kids--body">The ceremony will start promply at 5:15 PM</p>
           <p className="details__no-kids--body">There will not be any parking available </p>
           <p className="details__no-kids--body">We will be providing shuttle service to and from the wedding</p>
-          <p className="details__no-kids--body">Please see accomodations for details regarding shuttle servie</p>
+          <p className="details__no-kids--body">Please see accomodations for details regarding shuttle service</p>
         </div>
       </div>
     );
