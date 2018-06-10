@@ -59,9 +59,13 @@ export default class Photos extends React.Component {
 
     if (Math.abs(xDiff) > Math.abs(yDiff)) {
       if (xDiff > 0) {
-        this.handleNextPhotoClick();
+        setTimeout(() => {
+          this.handleNextPhotoClick();
+        }, 100)
       } else {
-        this.handlePreviousPhotoClick();
+        setTimeout(() => {
+          this.handlePreviousPhotoClick();
+        }, 100)
       }
     }
 
@@ -76,7 +80,7 @@ export default class Photos extends React.Component {
       },
       () => window.scrollTo(0, 0)
     );
-    window.addEventListener('scroll', this.noscroll);
+    // window.addEventListener('scroll', this.noscroll);
   }
 
   noscroll() {
@@ -90,9 +94,7 @@ export default class Photos extends React.Component {
   }
 
   handlePhotoCarouselClose() {
-    this.setState({ carouselIsVissible: false }, () =>
-      window.removeEventListener('scroll', this.noscroll)
-    );
+    this.setState({ carouselIsVissible: false });
   }
 
   handleArrowKeyPress(event) {
