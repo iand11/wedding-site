@@ -70,9 +70,6 @@
     height: 600px;
     margin: auto;
   }
-  &__mobile-buttons {
-    display: none;
-  }
 }
 
 .fade {
@@ -174,18 +171,6 @@
     }
     &__previous-button, &__next-button {
       display: none;
-    }
-    &__previous-button--mobile, &__next-button--mobile {
-      font-size: 30px;
-      outline: 0px;
-      border: none;
-    }
-    &__mobile-buttons {
-      display: flex;
-      flex-flow: row;
-      justify-content: space-between;
-      margin-top: 50px;
-      padding: 0 90px;
     }
     &__close-button {
       margin-left: 0;

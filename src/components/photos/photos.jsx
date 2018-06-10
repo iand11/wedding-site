@@ -148,31 +148,6 @@ export default class Photos extends React.Component {
     );
   }
 
-  // renderMobileButtons() {
-  //   return (
-  //     <div className="photo-carousel__mobile-buttons">
-  //       <button
-  //         ref={(c) => {
-  //           this.previousButtonMobile = c;
-  //         }}
-  //         className="photo-carousel__previous-button--mobile"
-  //         onClick={this.handlePreviousPhotoClick}
-  //       >
-  //         {this.renderIcon('angle-left')}
-  //       </button>
-  //       <button
-  //         ref={(c) => {
-  //           this.nextButtonMobile = c;
-  //         }}
-  //         className="photo-carousel__next-button--mobile"
-  //         onClick={this.handleNextPhotoClick}
-  //       >
-  //         {this.renderIcon('angle-right')}
-  //       </button>
-  //     </div>
-  //   );
-  // }
-
   renderPhotoCarousel() {
     if (this.state.carouselIsVissible) {
       return (
