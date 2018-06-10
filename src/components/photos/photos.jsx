@@ -12,7 +12,9 @@ export default class Photos extends React.Component {
     this.state = {
       carouselIsVissible: false,
       carouselPhoto: -1,
-      trigger: 'fade'
+      trigger: 'fade',
+      xDown: null,
+      yDown: null
     };
     this.handlePhotoCarouselClose = this.handlePhotoCarouselClose.bind(this);
     this.handleNextPhotoClick = this.handleNextPhotoClick.bind(this);
@@ -24,12 +26,47 @@ export default class Photos extends React.Component {
   componentDidMount() {
     document.addEventListener('mousedown', this.handleClickOutside);
     document.addEventListener('keydown', this.handleArrowKeyPress);
+    document.addEventListener('touchstart', this.handleTouchStart, false);
+    document.addEventListener('touchmove', this.handleTouchMove, false);
   }
 
   componentWillUnmount() {
     document.removeEventListener('mousedown', this.handleClickOutside);
     document.removeEventListener('keydown', this.handleArrowKeyPress);
+    document.removeEventListener('touchstart', this.handleTouchStart, false);
+    document.removeEventListener('touchmove', this.handleTouchMove, false);
   }
+
+  handleTouchStart = (event) => {
+    const xDown = event.touches[0].clientX;
+    const yDown = event.touches[0].clientY;
+
+    this.setState({ xDown, yDown });
+  };
+
+  handleTouchMove = (event) => {
+    const { xDown, yDown } = this.state;
+
+    if (!xDown || !yDown) {
+      return null;
+    }
+
+    const xUp = event.touches[0].clientX;
+    const yUp = event.touches[0].clientY;
+
+    const xDiff = xDown - xUp;
+    const yDiff = yDown - yUp;
+
+    if (Math.abs(xDiff) > Math.abs(yDiff)) {
+      if (xDiff > 0) {
+        this.handleNextPhotoClick();
+      } else {
+        this.handlePreviousPhotoClick();
+      }
+    }
+
+    this.setState({ xDown: null, yDown: null });
+  };
 
   handlePhotoClick(index) {
     this.setState(
@@ -75,9 +112,7 @@ export default class Photos extends React.Component {
       this.state.carouselIsVissible &&
       (!this.closeButton.contains(event.target) &&
         !this.previousButton.contains(event.target) &&
-        !this.nextButton.contains(event.target) &&
-        !this.previousButtonMobile.contains(event.target) &&
-        !this.nextButtonMobile.contains(event.target))
+        !this.nextButton.contains(event.target))
     ) {
       this.handlePhotoCarouselClose();
     }
@@ -113,30 +148,30 @@ export default class Photos extends React.Component {
     );
   }
 
-  renderMobileButtons() {
-    return (
-      <div className="photo-carousel__mobile-buttons">
-        <button
-          ref={(c) => {
-            this.previousButtonMobile = c;
-          }}
-          className="photo-carousel__previous-button--mobile"
-          onClick={this.handlePreviousPhotoClick}
-        >
-          {this.renderIcon('angle-left')}
-        </button>
-        <button
-          ref={(c) => {
-            this.nextButtonMobile = c;
-          }}
-          className="photo-carousel__next-button--mobile"
-          onClick={this.handleNextPhotoClick}
-        >
-          {this.renderIcon('angle-right')}
-        </button>
-      </div>
-    );
-  }
+  // renderMobileButtons() {
+  //   return (
+  //     <div className="photo-carousel__mobile-buttons">
+  //       <button
+  //         ref={(c) => {
+  //           this.previousButtonMobile = c;
+  //         }}
+  //         className="photo-carousel__previous-button--mobile"
+  //         onClick={this.handlePreviousPhotoClick}
+  //       >
+  //         {this.renderIcon('angle-left')}
+  //       </button>
+  //       <button
+  //         ref={(c) => {
+  //           this.nextButtonMobile = c;
+  //         }}
+  //         className="photo-carousel__next-button--mobile"
+  //         onClick={this.handleNextPhotoClick}
+  //       >
+  //         {this.renderIcon('angle-right')}
+  //       </button>
+  //     </div>
+  //   );
+  // }
 
   renderPhotoCarousel() {
     if (this.state.carouselIsVissible) {
@@ -182,7 +217,6 @@ export default class Photos extends React.Component {
               {this.renderIcon('angle-right')}
             </button>
           </div>
-          {this.renderMobileButtons()}
         </div>
       );
     }
