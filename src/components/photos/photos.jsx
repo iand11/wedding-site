@@ -145,7 +145,6 @@ export default class Photos extends React.Component {
   renderPhotoCarousel() {
     if (this.state.carouselIsVissible) {
       document.body.style.overflow = 'hidden';
-
       return (
         <div
           className="photo-carousel"
