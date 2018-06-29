@@ -1,6 +1,9 @@
 import React from 'react';
 
 import './style/registry.scss';
+import Heath from './images/heath-logo.png';
+import Zola from './images/zola-logo.jpg';
+import Amazon from './images/amazon-logo.png'
 
 export default class Registry extends React.Component {
   handleButtonClick(url) {
@@ -11,15 +14,18 @@ export default class Registry extends React.Component {
     const registries = [
       {
         name: "Heath",
-        url: 'http://www.heathceramics.com/giftregistry/view/index/id/98ce3256604d609d30806286c2d396f4/'
+        url: 'http://www.heathceramics.com/giftregistry/view/index/id/98ce3256604d609d30806286c2d396f4/',
+        image: Heath
       },
       {
         name: "Zola",
-        url: 'https://www.zola.com/registry/ali_ian'
+        url: 'https://www.zola.com/registry/ali_ian',
+        image: Zola
       },
       {
         name: "Amazon",
-        url: 'https://www.amazon.com/wedding/ali-seders-ian-driscoll-morgan-hill-august-2019/registry/2OJFRJCDUQ1PZ'
+        url: 'https://www.amazon.com/wedding/ali-seders-ian-driscoll-morgan-hill-august-2019/registry/2OJFRJCDUQ1PZ',
+        image: Amazon
       }
     ]
     return registries.map((registry) => {
@@ -28,7 +34,7 @@ export default class Registry extends React.Component {
           onClick={() => this.handleButtonClick(registry.url)}
           className="registry__registry-button"
         >
-          {registry.name}
+          <img style={{ width: '300px', backgroundColor: 'white' }} src={registry.image} alt={registry.name}/>
         </button>
       );
     })
