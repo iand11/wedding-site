@@ -9,7 +9,6 @@
     display: flex;
     flex-flow: row;
     justify-content: center;
-    // margin: auto;
     width: 100%;
   }
 
@@ -19,18 +18,12 @@
     border: none;
     color: white;
     backgrond-color: white;
-    // background-color: #13a5a5;
     cursor: pointer;
     border-radius: 5px;
     font-family: 'EB Garamond', serif;
     font-weight: normal;
-    // width: 150px;
     text-transform: uppercase;
     margin: 0 5px;
-
-    // &:hover {
-    //   background-color: #03b7b7;
-    // }
   }
 
   &__title {
