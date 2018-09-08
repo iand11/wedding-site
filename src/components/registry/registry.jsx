@@ -3,14 +3,13 @@ import React from 'react';
 import './style/registry.scss';
 import Heath from './images/heath-logo.png';
 import Zola from './images/zola-logo.jpg';
-import Amazon from './images/amazon-logo.png'
 
 export default class Registry extends React.Component {
   handleButtonClick(url) {
     window.location = url;;
   }
 
-  renderDonateButton() {
+  renderRegistriesButtons() {
     const registries = [
       {
         name: "Heath",
@@ -21,11 +20,6 @@ export default class Registry extends React.Component {
         name: "Zola",
         url: 'https://www.zola.com/registry/ali_ian',
         image: Zola
-      },
-      {
-        name: "Amazon",
-        url: 'https://www.amazon.com/wedding/ali-seders-ian-driscoll-morgan-hill-august-2019/registry/2OJFRJCDUQ1PZ',
-        image: Amazon
       }
     ]
     return registries.map((registry) => {
@@ -50,7 +44,7 @@ export default class Registry extends React.Component {
           We’ve created registries at:</p>
         </div>
         <div className="registry__buttons">
-          {this.renderDonateButton()}
+          {this.renderRegistriesButtons()}
         </div>
       </div>
     );
