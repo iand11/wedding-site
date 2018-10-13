@@ -78,6 +78,18 @@ export default class Photos extends React.Component {
     window.scrollTo(0, 0);
   }
 
+  delayFadeLeft() {
+    setTimeout(() => {
+      this.setState({ trigger: 'fade-left' });
+    }, 10);
+  }
+
+  delayFadeRight() {
+    setTimeout(() => {
+      this.setState({ trigger: 'fade-right' });
+    }, 10);
+  }
+
   delayFade() {
     setTimeout(() => {
       this.setState({ trigger: 'fade' });
@@ -119,7 +131,7 @@ export default class Photos extends React.Component {
           carouselPhoto: this.state.carouselPhoto + 1,
           trigger: null
         },
-        this.delayFade()
+        this.delayFadeLeft()
       );
     }
   }
@@ -131,7 +143,7 @@ export default class Photos extends React.Component {
           carouselPhoto: this.state.carouselPhoto - 1,
           trigger: null
         },
-        this.delayFade()
+        this.delayFadeRight()
       );
     }
   }
