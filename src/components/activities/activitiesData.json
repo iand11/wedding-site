@@ -100,7 +100,7 @@
       ]
     },
     {
-      "name": "Nappa / Sonoma",
+      "name": "Napa / Sonoma",
       "center": {
         "lat": 38.502,
         "lng": -122.265
@@ -143,13 +143,13 @@
       ],
       "food": [
         {
-          "title": "The Freemont Dinner",
-          "street_address": "2698 Fremont Drive",
-          "city_state": "Sonoma, CA 95476",
-          "url": "https://www.thefremontdiner.com",
+          "title": "La Taberna",
+          "street_address": "815 Main St",
+          "city_state": "Napa, CA 94559",
+          "url": "http://www.latabernanapa.com/",
           "position": {
-            "lat": 38.246,
-            "lng": -122.417
+            "lat": 38.298,
+            "lng": -122.284
           },
           "marker": "4"
         },
