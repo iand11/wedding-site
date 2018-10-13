@@ -59,7 +59,7 @@
           "city_state": "San Francisco, CA 94110",
           "url": "https://facebook.com/LaTaqSF/",
           "position": {
-            "lat": 37.750,
+            "lat": 37.75,
             "lng": -122.418
           },
           "marker": "5"
@@ -93,7 +93,7 @@
           "url": "https://www.thebuenavista.com",
           "position": {
             "lat": 37.806,
-            "lng": -122.420
+            "lng": -122.42
           },
           "marker": "8"
         }
@@ -124,7 +124,7 @@
           "street_address": "1902 Madrona Ave",
           "city_state": "St Helena, CA 94574",
           "position": {
-            "lat": 38.500,
+            "lat": 38.5,
             "lng": -122.478
           },
           "marker": "2"
@@ -181,7 +181,7 @@
           "city_state": "Gilroy, CA 95020",
           "position": {
             "lat": 37.013791,
-            "lng": -121.644790
+            "lng": -121.64479
           },
           "marker": "1"
         },
@@ -203,7 +203,7 @@
           "city_state": "San Martin, CA 95046",
           "position": {
             "lat": 37.072889,
-            "lng": -121.643270
+            "lng": -121.64327
           },
           "marker": "3"
         },
@@ -225,7 +225,7 @@
           "city_state": "Los Gatos, CA 95030",
           "position": {
             "lat": 37.264,
-            "lng": -121.950
+            "lng": -121.95
           },
           "marker": "5"
         }
@@ -238,7 +238,7 @@
           "city_state": "Los Gatos, CA 95030",
           "position": {
             "lat": 37.223297,
-            "lng": -121.983750
+            "lng": -121.98375
           },
           "marker": "6"
         },
