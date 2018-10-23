@@ -6,7 +6,6 @@ const GoogleMapComponent = withScriptjs(withGoogleMap((props) =>
   (<GoogleMap
     defaultZoom={props.defaultZoom}
     defaultCenter={props.defaultCenter}
-    // mapTypeId="terrain"
   >
     {props.home}
     {props.markers}
