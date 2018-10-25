@@ -74,22 +74,22 @@
 }
 
 .fade {
-  animation: fadein 1s;
+  animation: fadein 1s ease;
   visibility: visible;
   &-out-left{
-    animation: slideout-left 0.4s;
+    animation: slideout-left 0.4s ease;
     visibility: visible;
   }
   &-out-right{
-    animation: slideout-right 0.4s;
+    animation: slideout-right 0.4s ease;
     visibility: visible;
   }
   &-left {
-    animation: slidein-left 0.25s;
+    animation: slidein-left 0.25s ease;
     visibility: visible;
   }
   &-right {
-    animation: slidein-right 0.25s;
+    animation: slidein-right 0.25s ease;
     visibility: visible;
   }
 }
