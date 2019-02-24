@@ -1,37 +1,11 @@
 {
-  "hotels": [
-    {
-      "name": "1. Hampton Inn Morgan Hill",
-      "street_address": "16115 Condit Rd",
-      "city_state": "Morgan Hill, CA 95037",
-      "url": "http://hamptoninn3.hilton.com/en/hotels/california/hampton-inn-morgan-hill-SJCCRHX/index.html",
-      "marker": "1",
-      "position": {
-        "lat": 37.121038,
-        "lng": -121.624254
-      }
-    },
-    {
-      "name": "2. Courtyard by Marriot",
-      "street_address": "18610 Madrone Pkwy",
-      "city_state": "Morgan Hill, CA 95037",
-      "url": "http://www.marriott.com/hotels/travel/sjcmh-courtyard-san-jose-south-morgan-hill/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2",
-      "marker": "2",
-      "position": {
-        "lat": 37.152724,
-        "lng": -121.656161
-      }
-    },
-    {
-      "name": "3. La Quinta Inn & Suites",
-      "street_address": "3. La Quinta Inn & Suites",
-      "city_state": "Morgan Hill, CA 95037",
-      "url": "http://www.laquintamorganhill-sanjosesouth.com/?cid=local_6818",
-      "marker": "3",
-      "position": {
-        "lat": 37.133843,
-        "lng": -121.632668
-      }
-    }
-  ]
+  "name": "AC Hotel by Marriott San Jose Downtown",
+  "street_address": "350 W Santa Clara St",
+  "city_state": "San Jose, CA 95113",
+  "url": "https://www.marriott.com/hotels/travel/sjcac-ac-hotel-san-jose-downtown/",
+  "marker": null,
+  "position": {
+    "lat": 37.333150,
+    "lng": -121.896110
+  }
 }

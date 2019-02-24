@@ -9,7 +9,24 @@ export default class MapMarker extends React.Component {
     url: PropTypes.string.isRequired,
     position: PropTypes.object.isRequired,
     streetAddress: PropTypes.string.isRequired,
-    cityState: PropTypes.string.isRequired
+    cityState: PropTypes.string.isRequired,
+    windowIsOpen: PropTypes.bool,
+    search: PropTypes.string,
+  }
+
+  static defaultProps = {
+    windowIsOpen: false,
+    search: null
+  }
+
+  componentDidMount() {
+    this.checkWindow();
+  }
+
+  checkWindow = () => {
+    if (this.props.windowIsOpen) {
+      this.setState({ windowIsOpen: true });
+    }
   }
 
   state = {
@@ -23,7 +40,8 @@ export default class MapMarker extends React.Component {
   }
 
   renderMarker() {
-    const { label, position, title, url, streetAddress, cityState } = this.props;
+    const { label, position, title, url, streetAddress, cityState, search } = this.props;
+    const query = search || title;
     return(
       <Marker label={label} position={position} onClick={this.handleClick} >
         {this.state.windowIsOpen && <InfoWindow onCloseClick={this.handleClick}>
@@ -32,7 +50,7 @@ export default class MapMarker extends React.Component {
             <p>{streetAddress}</p>
             <p style={{ paddingBottom: '3px' }}>{cityState}</p>
             <p><a href={url}>{url}</a></p>
-            <a href={`https://www.google.com/maps/search/?api=1&query=${title}`}>Get Directions</a>
+            <a href={`https://www.google.com/maps/search/?api=1&query=${query}`}>Get Directions</a>
           </div>
         </InfoWindow>}
       </Marker>

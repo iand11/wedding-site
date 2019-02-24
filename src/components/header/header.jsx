@@ -105,9 +105,9 @@ export default class Header extends React.Component {
             activeStyle={{ color: '#13a5a5' }}
             className="header__nav-list--link wow fadeInDown"
             to="/details"
-            onClick={() => this.mobileView('Our Wedding')}
+            onClick={() => this.mobileView('Details')}
           >
-            Our Wedding
+            Details
           </NavLink>
           <NavLink
             data-wow-delay="0.4s"

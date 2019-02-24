@@ -20,6 +20,26 @@
       margin-right: 30px;
     }
 
+    &__details {
+      border-top: 1px solid grey;
+      padding: 30px 0 30px;
+      width: 100%;
+      margin: auto;
+      text-align: center;
+
+      &-no-border {
+        border-top: 0;
+        margin-bottom: 45px;
+      }
+  
+      &--body {
+        font-family: 'EB Garamond', serif;
+        font-size: 18px;
+        letter-spacing: 2px;
+        padding: 3px;
+      }
+    }
+
     &--number {
       width: 45px;
       height: 45px;

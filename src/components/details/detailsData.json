@@ -1,0 +1,32 @@
+{
+  "events": [
+    {
+      "title": "Wine Tasting",
+      "date_time": "11 AM - 2PM, August 23, 2019",
+      "location": "Kirigin Cellars",
+      "street_address": "11550 Watsonville Rd",
+      "city_state": "Gilroy, California 95020",
+      "position": {
+        "lat": 37.047730,
+        "lng": -121.652480
+      },
+      "window": false,
+      "search": "11550 Watsonville Rd, Gilroy, California 95020",
+      "kids": "Children are welcome"
+    },
+    {
+      "title": "Wedding Ceremony & Reception",
+      "date_time": "5:30 PM, August 24, 2019",
+      "location": "The Seders Home",
+      "street_address": "17155 Uvas Road",
+      "city_state": "Morgan Hill, California 95037",
+      "position": {
+        "lat": 37.0997311,
+        "lng": -121.7260854
+      },
+      "window": true,
+      "search": "17155 Uvas Road, Morgan Hill, California 95037",
+      "kids": "Adults only please"
+    }
+  ]
+}
