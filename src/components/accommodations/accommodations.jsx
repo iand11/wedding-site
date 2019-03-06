@@ -19,7 +19,7 @@ export default class Accommodations extends React.Component {
               <a className="info-section--link" href="tel:1-888-236-2424">1-888-236-2424</a>
             </div>
             <div className="info-section--wrapper-link">
-              <a className="info-section--link" href={hotel.url}>Visit Website</a>
+              <a className="info-section--link" style={{ color: '#13a5a5' }}href={hotel.url}>Book Your Room</a>
             </div>
           </div>
           <div className="info-section__details">
