@@ -145,6 +145,15 @@ export default class Header extends React.Component {
           >
             Registry
           </NavLink>
+          <NavLink
+            data-wow-delay="1s"
+            activeStyle={{ color: '#13a5a5' }}
+            className="header__nav-list--link wow fadeInDown"
+            to="/rsvp"
+            onClick={() => this.mobileView('Rsvp')}
+          >
+            RSVP
+          </NavLink>
         </div>
       );
     }

@@ -8,6 +8,7 @@ import Header from './header/header.jsx';
 import Details from './details/details.jsx';
 import Accommodations from './accommodations/accommodations.jsx';
 import Activities from './activities/activities.jsx';
+import Rsvp from './rsvp/rsvp.jsx';
 
 import './index.scss';
 
@@ -24,6 +25,7 @@ export default class App extends Component {
           <Route path="/details" component={Details} />
           <Route path="/accommodations" component={Accommodations} />
           <Route path="/activities" component={Activities} />
+          <Route path="/rsvp" component={Rsvp} />
         </div>
       </Router>
     );
