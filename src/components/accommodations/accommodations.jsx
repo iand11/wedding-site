@@ -36,6 +36,11 @@ export default class Accommodations extends React.Component {
             <p className="info-section__details--body">Shuttle pick up and drop off will be at the AC Hotel by Marriott San Jose Downtown</p>
             <p className="info-section__details--body">Pick up time is 4pm sharp</p>
           </div>
+          <div className="info-section__details-no-border">
+            <p className="info-section__details--body">Shuttles will begin running back to the hotel at 9pm</p>
+            <p className="info-section__details--body">Last shuttle leaves around 11pm</p>
+            <p className="info-section__details--body">Uber and Lyft rides are also available</p>
+          </div>
         </div>
       );
   }
